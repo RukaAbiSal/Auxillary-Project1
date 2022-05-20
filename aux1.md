@@ -27,7 +27,7 @@
 
 **.** For each user's ssh configuration , we will create an authorized key file and add below the public key.
 
-**.** Create a new file onboard.sh `vi onboarding.sh` and copy the script screenshot below into the file and save.
+**.** Create a new file onboard.sh `vi onboarding.sh` and copy the script in the screenshot below into the file and save.
 ![script](./images/script.PNG)
 
 **.** Create two files `touch id_rsa`  `touch id_rsa.pub `
@@ -40,14 +40,15 @@
 
 **.** Make the onboarding.sh an executable file `sudo chmod +x onboarding.sh`.
 
-**.** Switch to a super user `sudo su`, then run the script
+**.** Switch to a super user `sudo su`, then run the script `./onboarding.sh`
 ![script](./images/scriptrun.PNG)
 
 **.** To confirm if all the users have been created type `ls -l /home/` in the Shell folder.
 ![script](./images/Userscreated1.PNG)
 
-# To Connect with any of the users created 
-**.**Create a file ruka.pem paste the public key, then run `ssh -i ruka.pem Jamal@54.234.158.65`, ensure the pem key is protected `sudo chmod 600 ruka.pem` 
+# To connect with any of the users created 
+**.** Create a file ruka.pem paste the public key, then run `ssh -i ruka.pem Jamal@54.234.158.65`, 
+ensure the pem key is protected `sudo chmod 600 ruka.pem` 
 ![script](./images/Jamal1.PNG)
 
 
